@@ -1,0 +1,47 @@
+body {
+  padding-top: 70px;
+}
+
+.speakers {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.speakers div {
+  position: relative;
+  flex: auto;
+  flex-grow: 0;
+  width: 200px;
+  margin: 10px;
+  border-radius:.5rem;
+  height: 200px;
+  overflow: hidden;
+}
+
+.speakers div img {
+  width: 100%;
+  height: auto;
+}
+
+.speakers div h4 {
+  position: absolute;
+  bottom:0;
+  width:100%;
+  text-align: center;
+  color: #fff;
+  background-color: #000;
+  height: 30px;
+  margin: 0;
+  padding: 5px 0 0 0;
+  opacity: .6;
+  font-size: 16px;
+}
+
+.speaker-detail-img {
+  width: 200px;
+  float: left;
+  margin-right:15px;
+  margin-bottom:5px;
+}

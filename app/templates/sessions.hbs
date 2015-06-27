@@ -1,0 +1,16 @@
+<div class="row">
+  <div class="col-md-12">
+    <h1>Sessions</h1>
+    {{# each model as |session|}}
+      <div class="row">
+        <div class="col-md-12">
+          <div class="well">
+            <h2>{{session.title}}</h2>
+            <h4>{{#link-to 'speakers.speaker' session.user.slug}}{{session.user.displayName}}{{/link-to}}</h4>
+            <p>{{{session.abstractHtml}}}</p>
+          </div>
+        </div>
+      </div>
+    {{/each}}
+  </div>
+</div>
