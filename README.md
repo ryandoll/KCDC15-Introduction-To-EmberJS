@@ -1,7 +1,16 @@
-# Kcdc-ember
+# KCDC15 - Introduction to Ember.js - The Code
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+Below you will find the default readme that get's added in via Ember-CLI.  Read through the instructions to get the project up and running.  
+
+Once you have the project running, you will notice when viewing pages that the cross origin calls to kcdc.info's services are being blocked. (No 'Access-Control-Allow-Origin' header is present on the requested resource.) I am going on assumption that KCDC won't mind the small amount of traffic from your local box to test this example out, since the amount of users actively testing it would be small. If they tell me it's not cool, I will adjust accordingly in this repo.
+
+In order to bypass this, you can simply startup chrome from the command line with some security features removed to get it working: 
+
+  `open -a Google\ Chrome\ Canary --args --disable-web-security -–allow-file-access-from-files`
+
+I would recommend using a different install of Chrome, rather then your daily driver.  If you forget that you started up your normal Chrome browser with those options, you could visit some site that could introduce some problems to your computer.  I use the Chrome Canary build for this.
+
+NOTE: If someone would like to submit a pull request that uses Express inside the build to proxy out those calls, please do.  
 
 ## Prerequisites
 
